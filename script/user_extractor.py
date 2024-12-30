@@ -17,9 +17,8 @@ def create_txt(followers):
         for follower in followers:
             file.write("@" + follower + "\n")
 
+
 def extractor_name():
     with open("../people_to_mencion/people_to_mencion.txt", "r") as file:
         array = [line.strip() for line in file]
     return array
-
-extractor_username_from_json()
