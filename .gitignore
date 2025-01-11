@@ -1,3 +1,4 @@
 .venv
 .idea
 ./script/credentials.env
+./people_to_mencion/followers_1.json

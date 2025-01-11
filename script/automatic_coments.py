@@ -25,9 +25,8 @@ def double_mencion(users):
 def main():
     load_dotenv("credentials.env")
 
-    target_post = "https://www.instagram.com/p/Cpu6lKIO8MZ/?img_index=1"
+    target_post = "https://www.instagram.com/p/DEppM7AuNj2/"
     coment_text = extractor_name()
-
     # double_mencion_array = double_mencion(coment_text)
     # for i in range(0, len(double_mencion_array)):
     #     print(double_mencion_array[i])
@@ -53,13 +52,16 @@ def main():
     for i in range(0, len(coment_text)):
         try:
             if i == 0:
+                time.sleep(2)
                 comment_field = driver.find_element(By.XPATH,
                                                     '//textarea[@class="x1i0vuye xvbhtw8 x1ejq31n xd10rxx x1sy0etr x17r0tee x5n08af x78zum5 x1iyjqo2 x1qlqyl8 x1d6elog xlk1fp6 x1a2a7pz xexx8yu x4uap5 x18d9i69 xkhd6sd xtt52l0 xnalus7 xs3hnx8 x1bq4at4 xaqnwrm"]')
                 ActionChains(driver).move_to_element(comment_field).click(comment_field).perform()
                 comment_field = driver.find_element(By.XPATH,
                                                     '//textarea[@class="x1i0vuye xvbhtw8 x1ejq31n xd10rxx x1sy0etr x17r0tee x5n08af x78zum5 x1iyjqo2 x1qlqyl8 x1d6elog xlk1fp6 x1a2a7pz xexx8yu x4uap5 x18d9i69 xkhd6sd xtt52l0 xnalus7 xs3hnx8 x1bq4at4 xaqnwrm focus-visible"]')
                 comment_field.send_keys(coment_text[i])
+
             else:
+                time.sleep(2)
                 comment_field = driver.find_element(By.XPATH,
                                                     '//textarea[@class="x1i0vuye xvbhtw8 x1ejq31n xd10rxx x1sy0etr x17r0tee x5n08af x78zum5 x1iyjqo2 x1qlqyl8 x1d6elog xlk1fp6 x1a2a7pz xexx8yu x4uap5 x18d9i69 xkhd6sd xtt52l0 xnalus7 xs3hnx8 x1bq4at4 xaqnwrm focus-visible"]')
                 comment_field.send_keys(coment_text[i] + " ")
@@ -67,11 +69,11 @@ def main():
             publicar_button = driver.find_element(By.XPATH,
                                                   '//div[@role="button" and contains(text(), "Publicar")]')
             publicar_button.click()
-            time.sleep(5)
             print("Comentario publicado con éxito.")
         except Exception as e:
             print(f"Error al comentar: {e}")
-        time.sleep(5)
+
+        print(coment_text[i])
 
 
 if __name__ == "__main__":
