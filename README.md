@@ -13,7 +13,7 @@ Antes de ejecutar el script deberas obtener el listado de seguidos o seguidores.
 10. Crear archivo
 11. Esperar a que instagram te descargue la informacion y luego extraer el archivo followers_1.json (En mi caso se llamaba asi, si no se llama asi ponerle ese nombre o modificar el nombre en
     la funcion "extractor_username_from_json")
-13. Insertar el archivo en la carpeta people_to_mencion y ejecutar la funcion "extractor_username_from_json" ubicada en el script "user_extractor" para generar un txt con todos tus seguidores 
+13. Crear la carpeta people_to_mencion en la raiz, insertar el archivo followers_1.json y ejecutar la funcion "extractor_username_from_json" ubicada en el script "user_extractor" para generar un txt con todos tus seguidores 
 
 Pasos para ejecutar:
 1. Abrir el repositorio con pycharm u otro ide/editor de texto
