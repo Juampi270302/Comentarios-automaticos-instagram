@@ -1,5 +1,7 @@
 Script que permite comentar de forma automatica.
+
 Obtener seguidores de ig.
+
 Antes de ejecutar el script deberas obtener el listado de seguidos o seguidores. Esto se puede obtener con los siguientes pasos (Android):
 1. Tocar las lineas de opciones en tu perfil de instagarm
 2. Tu actividad
@@ -25,4 +27,4 @@ Pasos para ejecutar:
    PASSWORD=<tu contraseña>
 7. En la variable "target_post" del script automatic_comments, pegar el link de la publicacion a spamear
 
-Ignorar el mal ingles con el nombre de variables, funciones y scritps
+Ignorar el mal ingles con el nombre de variables, funciones y scripts
