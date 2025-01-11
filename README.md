@@ -1,5 +1,5 @@
-Script que permite comentar de forma automatica
-Obtener seguidores de ig
+Script que permite comentar de forma automatica.
+Obtener seguidores de ig.
 Antes de ejecutar el script deberas obtener el listado de seguidos o seguidores. Esto se puede obtener con los siguientes pasos (Android):
 1. Tocar las lineas de opciones en tu perfil de instagarm
 2. Tu actividad
