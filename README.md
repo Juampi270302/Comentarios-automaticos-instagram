@@ -16,12 +16,13 @@ Antes de ejecutar el script deberas obtener el listado de seguidos o seguidores.
 13. Crear la carpeta people_to_mencion en la raiz, insertar el archivo followers_1.json y ejecutar la funcion "extractor_username_from_json" ubicada en el script "user_extractor" para generar un txt con todos tus seguidores 
 
 Pasos para ejecutar:
-1. Abrir el repositorio con pycharm u otro ide/editor de texto
-2. Instalar las librerias de selenium y python-dotenv
-3. Dentro de la carpeta Script crear un archivo llamado credentials.env
-4. Dentro del archivo credentials.env escribir:
+1. Ejectuar el archivo chromedriver.exe para automatizar  
+2. Abrir el repositorio con pycharm u otro ide/editor de texto
+4. Instalar las librerias de selenium y python-dotenv
+5. Dentro de la carpeta Script crear un archivo llamado credentials.env
+6. Dentro del archivo credentials.env escribir:
    USERNAME=<tu usuario>
    PASSWORD=<tu contraseña>
-5. En la variable "target_post" del script automatic_comments, pegar el link de la publicacion a spamear
+7. En la variable "target_post" del script automatic_comments, pegar el link de la publicacion a spamear
 
 Ignorar el mal ingles con el nombre de variables, funciones y scritps
