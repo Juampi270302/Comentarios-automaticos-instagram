@@ -1,4 +1,5 @@
-Script que permite comentar de forma automatica.
+<h1>Script que permite comentar de forma automatica</h1>
+<h2>Obtener seguidores de ig</h2>
 Antes de ejecutar el script deberas obtener el listado de seguidos o seguidores. Esto se puede obtener con los siguientes pasos (Android):
 1. Tocar las lineas de opciones en tu perfil de instagarm
 2. Tu actividad
@@ -13,6 +14,7 @@ Antes de ejecutar el script deberas obtener el listado de seguidos o seguidores.
 11. Esperar a que instagram te descargue la informacion y luego extraer el archivo followers_1.json (En mi caso se llamaba asi, si no se llama asi ponerle ese nombre o modificar el nombre en
     la funcion "extractor_username_from_json")
 13. Insertar el archivo en la carpeta people_to_mencion y ejecutar la funcion "extractor_username_from_json" ubicada en el script "user_extractor" para generar un txt con todos tus seguidores 
+<h2>Ejecucion script</h2>
 Pasos para ejecutar:
 1. Abrir el repositorio con pycharm u otro ide/editor de texto
 2. Instalar las librerias de selenium y python-dotenv
